@@ -65,26 +65,8 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        .hero-image {
-            width: 100%;
-            max-width: 280px;
-            border-radius: 16px;
-            margin-bottom: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            border: 2px solid rgba(255,255,255,0.15);
-            animation: float 4s ease-in-out infinite;
-            position: relative;
-            z-index: 2;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
-            100% { transform: translateY(0px); }
-        }
-
         h1 {
-            font-size: 28px; font-weight: 700; margin-bottom: 15px;
+            font-size: 28px; font-weight: 700; margin-bottom: 20px;
             background: linear-gradient(to right, #a8d8ff, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -137,16 +119,12 @@
 
     <div class="card" id="main-card">
         <div id="screen-start">
-            <div class="fade-in-up" style="animation-delay: 0.1s;">
-                <img src="https://cdn.pixabay.com/photo/2017/01/14/12/59/ice-1978459_1280.jpg" alt="Каток" class="hero-image">
-            </div>
+            <h1 class="fade-in-up" style="animation-delay: 0.1s;">Яна, привет! 👋</h1>
             
-            <h1 class="fade-in-up" style="animation-delay: 0.2s;">Яна, привет! 👋</h1>
-            
-            <p class="fade-in-up" style="animation-delay: 0.3s;">Понимаю, что мы почти не знакомы, но я хотел бы это исправить.<br><br>
+            <p class="fade-in-up" style="animation-delay: 0.2s;">Понимаю, что мы почти не знакомы, но я хотел бы это исправить.<br><br>
             У меня есть два билета на каток у Флагштока. Обещаю, будет весело (даже если мы оба будем падать 😄).</p>
             
-            <div class="buttons fade-in-up" id="action-buttons" style="animation-delay: 0.4s;">
+            <div class="buttons fade-in-up" id="action-buttons" style="animation-delay: 0.3s;">
                 <button class="btn btn-yes-1" onclick="showScreen('screen-yes')">Да, я за! 😊</button>
                 <button class="btn btn-yes-2" onclick="showScreen('screen-yes')">Да, с удовольствием! 🔥</button>
             </div>
